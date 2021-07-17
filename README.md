@@ -46,3 +46,22 @@ To get the child of each node without going outside the boundaries of the image 
 In the Informed Search Problems, we calculated the Euclidean and Manhattan admissible heuristic in the following way:
 
 For the Euclidean distance we used the Pythagorean theorem to get the distance between each node and the goal node, which states that the area of the square whose side is the hypotenuse is equal to the sum of the areas of the squares on the other two sides.
+
+<img width="461" alt="EuclideanDist" src="https://user-images.githubusercontent.com/67923027/126050540-84bad6d7-fe3c-41cf-b0ac-f4214bec4692.png">
+
+For the Manhattan distance we calculated the distance between each node and the goal node with the absolute value of the difference in X added with the absolute value of the difference in Y.
+
+<img width="439" alt="manhattanDist" src="https://user-images.githubusercontent.com/67923027/126050546-802d2e62-1aad-444f-b629-8220cfb0e224.png">
+
+When we implemented the Greedy First algorithm with the Euclidean Distance heuristic for the given sample maze from (56,37) to (798,433) the cost of the search was a total of 141980 nodes generated and it was done in 888 milli seconds
+And with the Manhattan Distance heuristic the cost was a total of 150682 nodes generated and it was done in 902 milli seconds.
+When we implemented the AStar algorithm with the Euclidean Distance heuristic for the given sample maze from (56,37) to (798,433) the cost of the search was a total of 257633 nodes generated and it was done in 1124 milli seconds
+And with the Manhattan Distance heuristic the cost was a total of 252528 nodes generated and it was done in 1026 milli seconds.
+
+
+
+Conclusion:-
+
+In comparison between the different search algorithm for this problem, the Greedy first search was optimal in terms of time, and the Breadth first search algorithm gave the least steps to path solution for the agent to the goal node.
+
+
